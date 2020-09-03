@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="web考核项目">
+    <listeners>
+        <listener class-name="listener.TestResultListener"></listener>
+    </listeners>
+    <test name="加入课程" preserve-order="true">
+        <classes>
+            <class name="cases.AddClassroom"/>
+        </classes>
+    </test>
+    <test name="发送私信">
+        <classes>
+            <class name="cases.SendPrivateLetters"/>
+        </classes>
+    </test>
+    <test name="上传作业">
+        <classes>
+            <class name="cases.CommitHomework"/>
+        </classes>
+    </test>
+    <test name="退课">
+        <classes>
+            <class name="cases.QuitClass"/>
+        </classes>
+    </test>
+</suite>
